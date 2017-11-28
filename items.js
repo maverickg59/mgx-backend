@@ -7,7 +7,8 @@ module.exports = [
     size_id: 1,
     state_id: 1,
     condition_id: 1,
-    photo_url: 'www.google.com'
+    photo_url: 'www.google.com',
+    featured: true
   },
   {
     category_id: 1,
@@ -17,7 +18,8 @@ module.exports = [
     size_id: 1,
     state_id: 1,
     condition_id: 1,
-    photo_url: 'www.google.com'
+    photo_url: 'www.google.com',
+    featured: false
   },
   {
     category_id: 1,
@@ -27,7 +29,8 @@ module.exports = [
     size_id: 1,
     state_id: 1,
     condition_id: 1,
-    photo_url: 'www.google.com'
+    photo_url: 'www.google.com',
+    featured: true
   },
   {
     category_id: 1,
@@ -37,7 +40,8 @@ module.exports = [
     size_id: 1,
     state_id: 1,
     condition_id: 1,
-    photo_url: 'www.google.com'
+    photo_url: 'www.google.com',
+    featured: false
   },
   {
     category_id: 1,
@@ -47,6 +51,7 @@ module.exports = [
     size_id: 1,
     state_id: 1,
     condition_id: 1,
-    photo_url: 'www.google.com'
+    photo_url: 'www.google.com',
+    featured: true
   }
 ]

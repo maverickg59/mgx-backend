@@ -9,6 +9,7 @@ exports.up = function(knex, Promise) {
     table.integer('state_id')
     table.integer('condition_id')
     table.text('photo_url')
+    table.boolean('featured')
   })
 }
 

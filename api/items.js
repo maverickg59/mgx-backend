@@ -18,7 +18,18 @@ function validItem(item) {
   const hasState = typeof item.state_id == 'number'
   const hasCond = !isNaN(item.condition_id)
   const hasPhoto = typeof item.photo_url == 'string' && item.photo_url.trim() != ''
-  return hasCat && hasBrand && hasModel && hasCity && hasSize && hasState && hasCond && hasPhoto
+  const hasBool = typeof item.featured == 'boolean'
+  return (
+    hasCat &&
+    hasBrand &&
+    hasModel &&
+    hasCity &&
+    hasSize &&
+    hasState &&
+    hasCond &&
+    hasPhoto &&
+    hasBool
+  )
 }
 
 router.get('/', (req, res) => {

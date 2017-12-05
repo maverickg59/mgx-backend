@@ -2,6 +2,7 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable('item', table => {
     table.increments()
     table.integer('category_id')
+    table.text('price')
     table.text('brand')
     table.text('model')
     table.text('city')
@@ -10,6 +11,7 @@ exports.up = function(knex, Promise) {
     table.integer('condition_id')
     table.text('photo_url')
     table.boolean('featured')
+    table.integer('gender')
   })
 }
 

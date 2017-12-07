@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const router = express.Router()
 const queries = require('../db/queries')
@@ -44,22 +45,12 @@ router.get('/:id', isValidId, (req, res, next) => {
   })
 })
 
-// router.post('/', (req, res, next) => {
-//   if (validItem(req.body)) {
-    // queries.create(req.body).then(items => {
-    //   res.json(items[0])
-    // })
-//   } else {
-//     next(new Error('Invalid item!'))
-//   }
-// })
-
 router.post('/', (req, res, next) => {
   req.file('file')
     .upload({
       adapter: skipperS3,
-      key: 'AKIAILRSW7JDKJAWIAXQ',
-      secret: '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',
+      key: process.env.AWS_KEY,
+      secret: process.env.AWS_SECRET,
       bucket: 'mgx-photos',
     }, function whenDone(err, uploadedFiles) {
       console.log('data payload:', req.body)

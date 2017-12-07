@@ -9,8 +9,6 @@ const s3Client = new Minio.Client({
   secretKey: 'i7zmKkSiyA9KLq9uQA7NHIXDr0QJIEbwHdJdK+aJ'
 })
 
-// const file = path.resolve('./package.json')
-
 module.exports = uploadFile
 
 function uploadFile(file, callback) {
@@ -25,9 +23,3 @@ function uploadFile(file, callback) {
     }
   })
 }
-
-uploadFile(file, (err, url) => {
-  if (err) return console.error('Upload Failed:', err)
-  // Knex update here
-
-})

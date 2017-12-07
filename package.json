@@ -12,9 +12,13 @@
     "cors": "^2.8.4",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "express-fileupload": "^0.3.0",
     "knex": "^0.14.2",
+    "minio": "^3.2.2",
     "morgan": "~1.8.1",
     "pg": "^7.4.0",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "skipper-s3": "^0.5.9",
+    "uuid": "^3.1.0"
   }
 }

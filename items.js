@@ -1,7 +1,7 @@
 module.exports = [
   {
     category_id: 1,
-    price: '$80.00',
+    price: '80.00',
     brand: 'Alpinestars',
     model: 'GP Plus R',
     city: 'Tempe',
